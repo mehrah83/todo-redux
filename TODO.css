@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --background: #000;
+    --heading: #fff;
+}
+
+html{
+    font-size: 62.5%;
+    /* 1rem = 10px */
+}
+
+body{
+    overflow-x: hidden;
+    background: var(--background);
+}
+
+input,i{
+    display: inline-block;
+}
+
+h1,h2,h3,h4,h5{
+    font-family: 'Poppins', sans-serif;
+    color: var(--heading);
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+    font-size: 6rem;
+}
+
+h2{
+    font-size: 5rem;
+}
+
+h3{
+    font-size: 4rem;
+}
+
+h4{
+    font-size: 3rem;
+}
+
+h5{
+    font: 2rem;
+}
+
+p{
+    font: 1.8rem;
+}
+
+.container{
+    max-width: 110rem;
+    margin: 0rem auto;
+}
+
+.mt-20{
+    margin-top: 2rem;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-green{
+    color: green;
+}
+
+.form-control{
+    border: none;
+    outline: none;
+    padding: 1rem 4rem;
+    border-radius: 0.4rem;
+    width: inherit;
+}
+
+.add-btn-icon{
+    color: black;
+    position: absolute;
+    right: 0.5rem;
+    bottom: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.addItems{
+    border: 0.1rem solid white;
+    width: 50rem;
+    position: relative;
+    margin: 2rem auto;
+}
+
+
+
+
+.showItems {
+    margin-top: 3rem;
+    text-align: center;
+  }
+  
+  .eachItem {
+    background: #fff;
+    padding: 1.2rem 1rem;
+    border-radius: 0.5rem;
+    margin: 1rem auto;
+    max-width: 50rem;
+    word-break: break-word;
+    background: rgb(85, 41, 220);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .eachItem:hover {
+    background: rgb(249, 249, 252);
+    color: rgb(85, 41, 220);
+  }
+  
+  .showItems .eachItem h3 {
+    padding-left: 1rem;
+    font-size: 1.6rem;
+    color: #fff;
+  }
+  
+  .fa-trash-alt,
+  .fa-edit {
+    /* margin-left: -2.5rem; */
+    cursor: pointer;
+    pointer-events: auto;
+    z-index: 10;
+    color: rgb(251, 251, 251);
+    -webkit-transition: color 0.15s linear;
+    transition: color 0.15s linear;
+    font-size: 2rem;
+  }
+  
+  .addItems .fa-edit {
+    color: rgb(47, 214, 122);
+  }
+  
+  .fa-edit {
+    margin-left: -3.5rem;
+  }
+  
+  
+  .eachItem:hover .fa-trash-alt {
+    color: rgb(214, 47, 61);
+  }
+  
+  .eachItem:hover .fa-edit {
+    color: rgb(100, 214, 47);
+  }
+  
+  .eachItem:hover h3 {
+    color: rgb(85, 41, 220);
+  }
+  
+  .btn {
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 45px;
+    max-width: 160px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 100%;
+  }
+  .btn:hover {
+    text-decoration: none;
+  }
+  
+  .effect04 {
+    --uismLinkDisplay: var(--smLinkDisplay, inline-flex);
+    display: var(--uismLinkDisplay);
+    color: #000;
+    outline: solid 2px #000;
+    position: relative;
+    transition-duration: 0.4s;
+    overflow: hidden;
+  }
+  
+  .effect04::before,
+  .effect04 span {
+    margin: 0 auto;
+    transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+    transition-duration: 0.4s;
+  }
+  
+  .effect04:hover {
+    background-color: rgb(85, 41, 220);
+  }
+  
+  .effect04:hover span {
+    -webkit-transform: translateY(-400%) scale(-0.1, 20);
+    transform: translateY(-400%) scale(-0.1, 20);
+  }
+  
+  .effect04::before {
+    content: attr(data-sm-link-text);
+    color: #fff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    -webkit-transform: translateY(500%) scale(-0.1, 20);
+    transform: translateY(500%) scale(-0.1, 20);
+  }
+  
+  .effect04:hover::before {
+    letter-spacing: 0.05em;
+    -webkit-transform: translateY(0) scale(1, 1);
+    transform: translateY(0) scale(1, 1);
+  }
+  
+
+  .todo-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
